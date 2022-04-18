@@ -1,0 +1,28 @@
+{
+  "name": "202204-w3ch1-albert-sagol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryoSag/202204-W3CH1-albert-sagol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TryoSag/202204-W3CH1-albert-sagol/issues"
+  },
+  "homepage": "https://github.com/TryoSag/202204-W3CH1-albert-sagol#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^7.0.0"
+  }
+}
