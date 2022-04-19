@@ -8,5 +8,14 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: { "no-plusplus": "off", "no-restricted-syntax": "off" },
+  rules: {
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "import/extensions": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
+  },
 };
