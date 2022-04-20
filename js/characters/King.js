@@ -3,8 +3,8 @@ import Character from "./Character.js";
 class King extends Character {
   yearsOfReign;
 
-  constructor(kingsName, kingFamily, kingAge, kingYearsOfReign) {
-    super(kingsName, kingFamily, kingAge);
+  constructor(kingsName, kingFamily, kingAge, kingYearsOfReign, kingEmoji) {
+    super(kingsName, kingFamily, kingAge, kingEmoji);
     this.yearsOfReign = kingYearsOfReign;
   }
 

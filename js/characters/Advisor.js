@@ -3,8 +3,14 @@ import Character from "./Character.js";
 class Advisor extends Character {
   advise;
 
-  constructor(advisorName, advisorFamily, advisorAge, advisorCharacter) {
-    super(advisorName, advisorFamily, advisorAge);
+  constructor(
+    advisorName,
+    advisorFamily,
+    advisorAge,
+    advisorCharacter,
+    advisorEmoji
+  ) {
+    super(advisorName, advisorFamily, advisorAge, advisorEmoji);
 
     if (advisorCharacter instanceof Character) {
       this.advise = advisorCharacter;

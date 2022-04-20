@@ -10,24 +10,26 @@ class Squire extends Character {
     squireFamily,
     squireAge,
     pelotismValue,
-    characterServes
+    characterServes,
+    squireEmoji
   ) {
-    super(squireName, squireFamily, squireAge);
-    this.pelotism = Squire.pelotismFilter(pelotismValue);
+    super(squireName, squireFamily, squireAge, squireEmoji);
+    this.pelotismValue = pelotismValue;
+    this.pelotism = Squire.pelotismFilter();
 
     if (characterServes instanceof Fighter) {
       this.serves = characterServes;
     }
   }
 
-  static pelotismFilter(pelotismLevel) {
-    if (pelotismLevel < 0) {
+  static pelotismFilter() {
+    if (this.pelotismValue < 0) {
       return 0;
     }
-    if (pelotismLevel > 10) {
+    if (this.pelotismValue > 10) {
       return 10;
     }
-    return pelotismLevel;
+    return this.pelotismValue;
   }
 
   talk() {

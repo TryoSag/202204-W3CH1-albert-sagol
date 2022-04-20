@@ -9,11 +9,12 @@ class Fighter extends Character {
     fighterFamily,
     fighterAge,
     fighterWeapon,
-    fighterDexterity
+    fighterDexterity,
+    fighterEmoji
   ) {
-    super(fighterName, fighterFamily, fighterAge);
+    super(fighterName, fighterFamily, fighterAge, fighterEmoji);
     this.weapon = fighterWeapon;
-    this.destreza = Fighter.dexterityFilter(fighterDexterity);
+    this.dexterity = Fighter.dexterityFilter(fighterDexterity);
   }
 
   static dexterityFilter(dexterityValue) {
