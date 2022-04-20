@@ -15,14 +15,14 @@ class Squire extends Character {
   ) {
     super(squireName, squireFamily, squireAge, squireEmoji);
     this.pelotismValue = pelotismValue;
-    this.pelotism = Squire.pelotismFilter();
+    this.pelotism = this.pelotismFilter();
 
     if (characterServes instanceof Fighter) {
       this.serves = characterServes;
     }
   }
 
-  static pelotismFilter() {
+  pelotismFilter() {
     if (this.pelotismValue < 0) {
       return 0;
     }
